@@ -1,6 +1,6 @@
 <?php
 
- //session_start();
+ session_start();
 
 
  if(isset($_POST['submit'])) {
@@ -13,15 +13,9 @@
   $data = "$username, $password, $email, user \n";
   $dataArr = explode(",  ", $data);
 
-  file_put_contents("./Database/database.txt" , $dataArr , FILE_APPEND);
+  file_put_contents("../Database/database.txt" , $dataArr , FILE_APPEND);
      
-   /*   $data = json_encode($dataArr);
-
-     if(file_put_contents( "./Database/database.txt" , $data, FILE_APPEND | LOCK_EX) !== false) {
-        header('location: login.php');
-     }
-     
-   */
+  header("location:../admin.php");
    
  }
    
@@ -42,7 +36,7 @@
 
   <div class="container">
    <form action="" class="form m-5 p-5 " method="post">
-    <h2 class="h2 text-center">Register Form</h2>
+    <h2 class="h2 text-center">Create New Member</h2>
 
    <div class="mb-3">
   <label for="username" class="form-label">Username</label>
@@ -60,7 +54,6 @@
 
  <br><br>
 
- <p>Already Have An Account?  <a href="login.php">login</a> </p>
    </form>
   </div>
 
