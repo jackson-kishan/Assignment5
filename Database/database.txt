@@ -1,4 +1,3 @@
 admin, 1234, admin@gmail.com, admin
-kishan, 4321, kishan45@gmail.com, user 
 Jackson, 0987, jackson45@gmail.com, user 
 Jeson, 11223344, jeson@gmail.com, user 
