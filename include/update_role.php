@@ -35,10 +35,11 @@ $users = file($fp , FILE_IGNORE_NEW_LINES);
                         array_replace($user[3] , ['user']);
                         // header("location: ../admin.php");
                         } elseif($change == 'user') {
-                          //array_replace($user[3] , ['admin']);
+                         // array_replace($user[3] , ['admin']);
                         // header("location: ../admin.php");
                         }
 
+                        
                      
                     }
 

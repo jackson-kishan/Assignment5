@@ -13,8 +13,8 @@ foreach ($users as $user):
    // var_dump($storedname);
 
     if(isset($_GET['delete'])) {
-        var_dump($_GET['delete']);
-        var_dump($storedname);
+        unset($_GET['delete']);
+       
     }
 
 endforeach;  

@@ -62,7 +62,7 @@ $users = file($fp , FILE_IGNORE_NEW_LINES);
                              </td>
                             <td>
                               <?php printf("  <a href='./include/edit.php?edit=%s' class=' btn btn-success' title='update data' data-toggle='tooltip'>Edit</a>" , $storedrole); ?>
-                              <?php printf("  <a href='./include/delete.php?delete=%s' class=' btn btn-danger' title='update data' data-toggle='tooltip'>Delete</a>" , $storedrole); ?>
+                              <?php printf("  <a href='./include/delete.php?delete=%s' class=' btn btn-danger' title='update data' data-toggle='tooltip'>Delete</a>" , $users[0]); ?>
                             </td>
                         </tr>
 

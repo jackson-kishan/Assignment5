@@ -38,8 +38,7 @@ $users = file($fp , FILE_IGNORE_NEW_LINES);
 
                 endforeach;  
                         
-                         
-                          var_dump($storedname);
+                        
                           
                           ?>
                    
